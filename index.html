@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500&family=Poppins:wght@200;300&family=Roboto:wght@100&display=swap" rel="stylesheet">    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body> 
+    <header>
+        <a href="#">
+        <div class = "logo">
+            <img src = "https://designs.vn/wp-content/images/09-08-2013/logo_lagi_8_resize.JPG" width = 100px height = 100px>
+        </div>
+        </a>
+        <!-- <div class = "login">
+            Login
+        </div> -->
+        <div class = "taskbar"> 
+            <a id = "loginBtn"  href="./login/login.html">Đăng nhập</a>
+            <div class="cart">
+                <a href="./cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <div class="cartAmount">0</div>
+            </div>  
+            <!-- <div class = "menu">Menu</div>
+            <div class = "info">Thong tin dinh duong</div> -->
+        </div>
+    </header>
+    <div class = "content">
+        <div class = "introslide">
+            <div class = "slideshow">
+                <img src = "https://i.ytimg.com/vi/emuw7aCP5E4/maxresdefault.jpg">
+            </div>
+            <div class = "slideshow">
+                <img src = "https://cdn.brvn.vn/topics/1280px/2020/24310_24310_F&B-VuaBanhMi_Ava_2.jpg">
+            </div>
+            <div class = "slideshow">
+                <img src = "https://banhmipho.vn/wp-content/uploads/2020/09/khuyen-mai-banner.jpg">
+            </div>
+            <div class = "slideshow">
+                <img src = "https://cdn.24h.com.vn/upload/3-2022/images/2022-07-14/Banh-mi-diem-nhan-doc-dao-cua-am-thuc-duong-pho-Viet-Nam-2-1657769244-963-width800height450.jpg">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- <div class = "name">ABCD Bakery</div>
+        <div class = "intro">Cakes for health</div> -->
+        <div class = "option">
+            <button onClick="document.getElementById('menu').scrollIntoView();">Mua ngay</button>
+            <button>Thong tin dinh duong</button>
+        </div>
+        <img class = "macarons" src = "https://static.wixstatic.com/media/6c7bb7_e081bb9d76f843d1bf798594ac21f459~mv2.jpg/v1/fill/w_1175,h_625,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/17994599215401949.jpg">
+        
+    </div>
+
+    <div class="search_bar">
+        <input id="searchbar" oninput="filterFunc()" type="search"/>
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="title">
+            <h2>Our Menu</h2>
+          </div>
+          <div class="menu_items"></div>
+      </div>
+    
+    <div class = "moreinfo">
+        <div class = "background">
+            Tiệm Bánh Xinh được ra đời với thông điệp mang đam mê của chúng tôi gửi gắm đến bạn qua những chiếc bánh ngọt và thức uống ngon, giá rẻ, vệ sinh và chất lượng luôn được đặt lên hàng đầu. Sự ra đời của mỗi chiếc bánh đều được chọn lọc kỹ lưỡng tâm huyết của đội ngũ chúng tôi từ khâu nguyên liệu, chế biến để khi đến tay của các bạn, chúng đều trở thành sản phẩm hoàn hảo nhất.
+
+            Với không gian đẹp, yên tĩnh, Tiệm Bánh Xinh thích hợp là nơi để bạn có thể thư giãn sau những giờ học tập và làm việc mệt mỏi, nơi bạn có thể vừa thưởng thức bánh ngọt vừa tán gẫu những câu chuyện vui vẻ cùng bạn bè, hay chỉ đơn giản bạn cần một tách cà phê và một chiếc bánh ngọt cùng với quyển sách bạn yêu thích. Và là thiên đường đối với những tín đồ thích ăn ngọt.
+        </div>
+        <div class = "images">
+            <div class = "img1">
+                <img src = "https://cdn.cet.edu.vn/wp-content/uploads/2020/03/kinh-doanh-tiem-banh-ngot.jpg" width=120%>
+            </div>
+            <div class = "img2">
+                <img src = "https://digifood.vn/blog/wp-content/uploads/2021/06/banh-ngot-ngon-ha-noi-1-1024x1024.jpg" width=50%>
+            </div>
+        </div>
+
+    </div>
+
+    <div class = "contact">
+        <h2>Contact Us</h2>
+        <div>Address: Tầng 6 - Số 22 Thành Công - quận Ba Đình - Hà Nội - Vietnam</div>
+        <div>Phone: 01234567</div>
+    </div>
+
+    <div class = "feedback">
+        <div class = "title">Feedback</div>
+        <form>
+            <div class = "fb">
+                <label for="name">Name</label>
+                <input id = "name" type="text" placeholder="Enter name">    
+            </div>
+            <div class = "fb">
+                <label for="phone">Phone No</label>
+                <input id = "phone" type="number" placeholder="Enter phone no">    
+            </div>
+            <div class = "fb">
+                <label for="content">Feedback</label>
+                <textarea id = "content"></textarea>     
+            </div>
+        </form>
+    </div>
+    <script src="./data.js"></script>
+    <script src = ./app.js></script>
+    <script src="./search.js"></script>
+</body>
+</html>
